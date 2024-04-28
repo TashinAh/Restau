@@ -1,0 +1,52 @@
+@media screen and (max-width: 1200px){
+	section{
+		padding: 3rem 5%;
+	}
+}
+@media screen and (max-width: 991px){
+	section{
+		padding: 3rem 1.8rem;
+	}
+
+	html{
+		font-size: 55%;
+	}
+}
+@media screen and (max-width: 768px){
+	#menu-btn{
+		display: inline-block;
+	}
+	.fa-times{
+		transform: rotate(180deg);
+	}
+	.header .navbar{
+		position: absolute;
+		top: 99%; left: 0;
+		right: 0;
+		background-color: var(--white);
+		border-top: var(--border);
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+	.header .navbar.active{
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+	.header .navbar a{
+		display: block;
+		margin: 2rem;
+		text-align: center;
+	}
+	.menu .slide .box-container .box{
+		flex-flow: column;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 450px){
+	html{
+		font-size: 50%;
+	}
+}
+@media screen and (max-width: 320px){
+	.food .slide img{
+		height: 20rem;
+	}
+}
